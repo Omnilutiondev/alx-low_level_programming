@@ -1,13 +1,13 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - Entry point
+ * main - Prints "and that piece of art is useful" - Dora Korpar, 2015-10-19,
+ * followed by a new line, to standard error.
  *
- * Return: Always 1 (Success)
+ * Return: Always 1 (Error)
  */
 int main(void)
 {
-	char message[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	write(STDOUT_FILENO, message, sizeof(message) -1);
+	write (2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 61);
 	return (1);
 }
