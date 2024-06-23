@@ -1,2 +1,2 @@
 #!/bin/bash
-export CFILE="100-intel.c"; gcc -S "$CFILE" -o "${CFILE%.c}.s
+export CFILE=100-intel.c; gcc -S "$CFILE" -o "${CFILE%.c}.s"
