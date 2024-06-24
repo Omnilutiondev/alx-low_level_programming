@@ -24,7 +24,7 @@ int main(void)
 	else if (n == 0)
 	printf("is zero\n");
 	
-	else (n < 0)
+	else
 	printf("is negative\n");
 	/* your code goes there */
 	return (0);
