@@ -8,7 +8,7 @@
  */
 int main(void) 
 {
-	char c; // Declare 'c' outside the loop
+	char c;
 	for (c = 'a'; c <= 'z'; ++c)
 	{
 		putchar(c);
