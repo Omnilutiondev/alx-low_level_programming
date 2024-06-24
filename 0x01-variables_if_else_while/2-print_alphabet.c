@@ -8,10 +8,11 @@
  */
 int main(void) 
 {
-	for (char c = 'a'; c <= 'z'; ++c) 
+	char c; // Declare 'c' outside the loop
+	for (c = 'a'; c <= 'z'; ++c)
 	{
 		putchar(c);
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
