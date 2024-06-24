@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Git Add ."
+git add .
+echo
+echo "Git Commits"
+git commit -m "C pushing out"
+echo
+echo "Git Pushed"
+git push -u origin master
+echo
