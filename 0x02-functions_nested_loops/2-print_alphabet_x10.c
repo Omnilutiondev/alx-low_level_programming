@@ -5,6 +5,11 @@
  * 
  * Return: void
  */
+int main(void)
+{
+	print_alphabet_x10(void);
+}
+
 void print_alphabet_x10(void)
 {
 	int i;
@@ -21,9 +26,4 @@ void print_alphabet_x10(void)
 		start = 'a';
 		_putchar('\n');
 	}
-}
-
-int main(void)
-{
-	print_alphabet_x10(void);
 }
