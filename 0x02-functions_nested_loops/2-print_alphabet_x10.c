@@ -2,11 +2,10 @@
 
 /**
  * print_alphabet_x10 - Make the alphabet 10 times in lowercas
- * 
+ *
  * Return: void
  */
 void print_alphabet_x10(void)
-
 {
 	char c;
 	int i = 0;
