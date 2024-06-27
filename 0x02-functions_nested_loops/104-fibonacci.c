@@ -35,7 +35,7 @@ int main(void)
 	}
 	printf("%lu%lu", half1, half2);
 	if (count != 98)
-	printf(",");
+	printf(", ");
 	fibo1_half1 = fibo2_half1;
 	fibo1_half2 = fibo2_half2;
 	fibo2_half1 = half1;
