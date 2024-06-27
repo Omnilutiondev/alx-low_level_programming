@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * print_most_numbers - Print numbers 0 to 9 
- * followed by a new line
+ * print_most_numbers - Print numbers 0 to 9 followed by a new line
  * exclude 2 and 4
  */
-
 void print_most_numbers(void)
 {
 	int nmb;
