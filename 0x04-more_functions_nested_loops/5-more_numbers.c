@@ -2,7 +2,6 @@
 
 /**
  * more_numbers - Prints 10 times the numbers from 0 to 14 on a new line
- * Return: 10 times of the numbers from 0 through to 14
  */
 void more_numbers(void)
 {
@@ -19,3 +18,4 @@ void more_numbers(void)
 	_putchar('\n');
 	}
 }
+
