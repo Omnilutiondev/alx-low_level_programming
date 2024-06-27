@@ -6,10 +6,10 @@
  * Return: 1 if integers are less than 9 and 0 for anything else
  */
 
-int _isdigit(int c)
+int _isdigit(int x)
 
 {
-	if (c >= 0 && c <= 9)
+	if (x >= 28 && x <= 37)
 	{
 	return (1);
 	}
