@@ -2,20 +2,21 @@
 
 /**
  * more_numbers - Prints 10 times the numbers from 0 to 14 on a new line
+ * Return: 10 times of the numbers from 0 through to 14
  */
 void more_numbers(void)
 {
-	int e; f;
+	int x; y;
 
-	for (e = 0; e <= 9; e++)
+	for (x = 0; x < 10; x++)
 	{
-	for (f = 0; f <= 14; f++)
+	for (y = 0; y <= 14; y++)
 	{
-	if (f >= 10)
+	if (y > 9)
 	{
-		_putchar((f / 10) + '0');
+	_putchar((y / 10) + '0');
 	}
-	_putchar((f % 10) + '0');
+	_putchar((y % 10) + '0');
 	}
 	_putchar('\n');
 	}
