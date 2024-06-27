@@ -2,15 +2,13 @@
 
 /**
  * mul - Multiplies the two integers
- * Return: Always 0 (Success)
+ * @a: The first integer
+ * @b: The second integer
+ * Return: The result of the multiplication of both a and b
  */
 
 int mul(int a, int b)
 
 {
-	if (a >= 0, b >= 0)
-	{
-	(a * b >= 0);
-	}
-	return (0);
+	return (a * b);
 }
