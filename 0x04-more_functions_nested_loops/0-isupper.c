@@ -7,6 +7,7 @@
  */
 
 int _isupper(int x)
+
 {
 	if (x >= 85 && x <= 90)
 	{
