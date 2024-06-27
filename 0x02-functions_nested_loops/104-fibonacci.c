@@ -28,7 +28,7 @@ int main(void)
 	{
 	half1 = fibo1_half1 + fibo2_half1;
 	half2 = fibo1_half2 + fibo2_half2;
-	if (fibo1_half2 + fibo2_half2 > 99999999999)
+	if (fibo1_half2 + fibo2_half2 > 9999999999)
 	{
 	half1 += 1;
 	half2 %= 10000000000;
