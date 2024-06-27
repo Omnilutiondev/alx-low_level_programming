@@ -4,7 +4,7 @@ echo "Git Add"
 git add .
 echo
 echo "Git commits"
-git commit -m "Nested Loops n Push"
+git commit -m "Debugging is fun"
 echo
 echo "Git Push"
 git push
