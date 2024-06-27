@@ -8,7 +8,7 @@
 int mul(int a, int b)
 
 {
-	if (a >= 0 && b >= 0)
+	if (a >= 0, b >= 0)
 	{
 	(a * b >= 0);
 	}
