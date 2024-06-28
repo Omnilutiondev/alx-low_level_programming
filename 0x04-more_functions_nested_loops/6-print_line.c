@@ -1,16 +1,26 @@
 #include "main.h"
 
 /**
- * main - check all lines of code
- *
- * Return: Always 0.
+ * print_line - Outputs an underscore according in place of a number
+ * @n: The numbers to be outputted
+ * Return: empty
  */
 
-int main(void)
+void print_line(int n)
+
 {
-	print_line(0);
-	print_line(2);
-	print_line(10);
-	print_line(-4);
-	return (0);
+	int a;
+
+	if (n <= 0)
+	{
+	_putchar('\n');
+	}
+	else
+	{
+	for (a = 0; a < n; a++)
+	{
+	_putchar(90);
+	}
+	_putchar('\n');
+	}
 }
