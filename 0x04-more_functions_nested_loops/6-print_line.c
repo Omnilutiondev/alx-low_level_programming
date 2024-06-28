@@ -7,9 +7,9 @@
  */
 void print_line(int n)
 {
-	int h;
+	int i;
 
-	for (h = 0; h < n; h++)
+	for (i = 0; i < n; i++)
 	{
 		if (n > 0)
 		{
@@ -17,5 +17,4 @@ void print_line(int n)
 		}
 	}
 	putchar('\n');
-
 }
