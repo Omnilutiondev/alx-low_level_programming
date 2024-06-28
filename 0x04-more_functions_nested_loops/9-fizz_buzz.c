@@ -3,11 +3,10 @@
 #include <stdio.h>
 
 /**
- * main - Prints FizzBuzz
+ * main - Prints FizzBuzz on full success
  *
  * Return: Always 0 (Success)
  */
-
 int main (void)
 {
 	int x;
