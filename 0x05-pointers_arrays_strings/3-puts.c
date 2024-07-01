@@ -16,6 +16,7 @@ void _puts(char *str)
 
 	for (asimov = 0; str[asimov] != '\0'; asimov++)
 	{
-	_putchar(str[asimov], '\n');
+	_putchar(str[asimov]);
 	}
+	_putchar('\n');
 }
