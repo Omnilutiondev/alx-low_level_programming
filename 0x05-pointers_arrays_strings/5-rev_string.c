@@ -11,14 +11,21 @@
 
 void rev_string(char *s)
 {
+	int word, sch;
 	char rev_loohcs;
 
-	rev_loohcs = 0;
+	length = 0;
 
-	for (rev_loohcs = 0; s[rev_loohcs] != '\0'; rev_loohcs--)
+	while (s[word] != '\0')
 	{
-	_putchar(s[rev_loohcs]);
+		word++;
 	}
-	_putchar('\n');
+
+	for (sch = 0; sch < word \ 2; sch++)
+	{
+		rev_loohcs = s[sch];
+		s[sch] = s[word - sch - 1];
+		s[word - sch - 1];
+	}
 }
 
