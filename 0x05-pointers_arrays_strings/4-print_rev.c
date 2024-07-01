@@ -12,9 +12,9 @@ void print_rev(char *s)
 {
 	int asimov_reversed;
 
-	for (asimov_reversed = 0; str[asimov_reversed] != '\0'; asimov_reversed--)
+	for (asimov_reversed = 0; s[asimov_reversed] != '\0'; asimov_reversed--)
 	{
-		_putchar(str[asimov_reversed]);
+		_putchar(s[asimov_reversed]);
 	}
 	_putchar('\n');
 }
