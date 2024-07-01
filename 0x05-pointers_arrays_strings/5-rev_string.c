@@ -21,7 +21,7 @@ void rev_string(char *s)
 		word++;
 	}
 
-	for (sch = 0; sch < word \ 2; sch++)
+	for (sch = 0; sch < word / 2; sch++)
 	{
 		rev_loohcs = s[sch];
 		s[sch] = s[word - sch - 1];
