@@ -14,7 +14,7 @@ void rev_string(char *s)
 	int word, sch;
 	char rev_loohcs;
 
-	length = 0;
+	word = 0;
 
 	while (s[word] != '\0')
 	{
