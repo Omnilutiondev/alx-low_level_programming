@@ -8,14 +8,13 @@
  *
  * Description: Count the number of characters in the input string from 0
  *
- * Return: The length of the string
+ * Return: (0)
  */
 int _strlen(char *s)
 {
 	int total len;
 
 	total_len = 0;
-
 	while (s[total_len] != '\0')
 	{
 	total_len++;
