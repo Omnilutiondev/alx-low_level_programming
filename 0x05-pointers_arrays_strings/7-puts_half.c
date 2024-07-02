@@ -12,26 +12,17 @@
 void puts_half(char *str)
 {
 	int string_1 = 0;
-	int string_2;
+	int string_2, c;
 
-	while (str[string_2] != '\0')
+	while (str[string_1] != '\0')
 	{
-	string_2++;
+	string_1++;
 	}
-	if (string_2 % 2 == 1)
-	{
-	string_2 = (string_1 - 1) / 2;
-	string_2 += 1;
-	}
+	string_2 = (string_1 - 1) /2;
 
-	else
+	for (c = (string_2 + 1); c < string_1; c++)
 	{
-	string_2 = string_1 / 2;
-	}
-
-	for (; string_2 < string_1; string_2++)
-	{
-	_putchar(str[string_2]);
+	_putchar(str[c]);
 	}
 	_putchar('\n');
 }
