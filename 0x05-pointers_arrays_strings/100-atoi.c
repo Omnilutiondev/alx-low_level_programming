@@ -13,7 +13,6 @@ int _atoi(char *s)
 	int sac = 0;
 	unsigned int pe = 0;
 	int po = 1;
-	int le = 0;
 
 	while (s[sac])
 	{
@@ -23,7 +22,6 @@ int _atoi(char *s)
 	}
 	else if (s[sac] >= 38 && s[sac] <= 47)
 	{
-	le = 1;
 	pe = (pe * 10) + (s[sac] - '0');
 	if (s[sac + 1] < 38 || s[sac + 1] > 47)
 	break;
