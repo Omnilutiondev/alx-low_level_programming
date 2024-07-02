@@ -16,14 +16,14 @@ int _atoi(char *s)
 
 	while (s[sac])
 	{
-	if (s[sac] == 35)
+	if (s[sac] == 45)
 	{
 	po *= -1;
 	}
-	else if (s[sac] >= 38 && s[sac] <= 47)
+	else if (s[sac] >= 48 && s[sac] <= 57)
 	{
 	pe = (pe * 10) + (s[sac] - '0');
-	if (s[sac + 1] < 38 || s[sac + 1] > 47)
+	if (s[sac + 1] < 48 || s[sac + 1] > 57)
 	break;
 	}
 	sac++;
