@@ -14,6 +14,11 @@ void print_number(int n)
 	int divi, digt;
 	int is_ive = 0;
 
+	if (n == 0)
+	{
+	_putchar('0');
+	return;
+	}
 	if (n < 0)
 	{
 	is_ive = 1;
