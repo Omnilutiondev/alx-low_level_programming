@@ -11,31 +11,15 @@
 
 void print_number(int n)
 {
-	int divi, digt;
-	int is_ive = 0;
+	unsigned int divi = n;
 
-	if (n == 0)
-	{
-	_putchar('0');
-	return;
-	}
 	if (n < 0)
 	{
-	is_ive = 1;
 	_putchar('-');
-	n = -n;
+	divi = -divi;
 	}
 
-	divi = 1;
-	while (n / divi >= 10)
-	divi *= 10;
-
-	if (is_ive)
-	_putchar('_');
-	while (divi != 0)
-	{
-	digt = (n / divi) % 10;
-	_putchar(digt + '0');
-	divi /= 10;
-	}
+	if ((divi / 10) > 0)
+	print_number(divi / 10);
+	_putchar((divi % 10) + '0';
 }
