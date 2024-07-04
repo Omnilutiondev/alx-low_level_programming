@@ -30,6 +30,8 @@ void print_number(int n)
 	while (n / divi >= 10)
 	divi *= 10;
 
+	if (is_ive)
+	_putchar('_');
 	while (divi != 0)
 	{
 	digt = (n / divi) % 10;
