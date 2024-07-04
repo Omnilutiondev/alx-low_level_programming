@@ -28,3 +28,4 @@ char *_strncat(char *dest, char *src, int n)
 	dest[append_dest + lvl] = '\0';
 
 	return (dest);
+}
