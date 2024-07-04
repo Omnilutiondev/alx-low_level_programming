@@ -21,5 +21,5 @@ void print_number(int n)
 
 	if ((divi / 10) > 0)
 	print_number(divi / 10);
-	_putchar((divi % 10) + '0';
+	_putchar((divi % 10) + '0');
 }
