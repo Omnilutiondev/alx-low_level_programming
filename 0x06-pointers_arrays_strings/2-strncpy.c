@@ -20,8 +20,10 @@ char *_strcat(char *dest, char *src)
 
 	while (src[origin]) != '\0')
 	{
-		dest[appnd_len + 1] = src[origin];
+		dest[appnd_len] = src[origin];
+		appnd_len++;
 		origin++;
+
 	}
 	dest[appnd_len + origin] = '\0';
 
