@@ -1,0 +1,1 @@
+This all about Pointers_Arrays_Strings
