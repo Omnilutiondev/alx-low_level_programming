@@ -17,10 +17,12 @@ char *_strncat(char *dest, char *src, int n)
 	int lvl = 0;
 
 	while (dest[append_dest])
-	lvl++;
+		append_dest++;
 
-	for (append_dest = 0; src[append_dest] && append_dest < n; append_dest++)
-	dest[lvl++] = src[append_dest];
+	for (lvl = 0; src[lvl] && lvl < n; lvl++)
+		dest[append_dest++] = src[lvl];
+
+	dest[append_dest] = '\0';
 
 	return (dest);
 }
