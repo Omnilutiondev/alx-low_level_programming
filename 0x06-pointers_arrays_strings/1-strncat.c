@@ -16,16 +16,11 @@ char *_strncat(char *dest, char *src, int n)
 	int append_dest = 0;
 	int lvl = 0;
 
-	while (dest[append_dest] != '\0')
-		append_dest++;
+	while (dest[append_dest])
+	lvl++;
 
-	while (src[lvl] != '\0' && i < n)
-	{
-		dest[append_dest + lvl] = src[lvl];
-		lvl++;
-	}
-
-	dest[append_dest + lvl] = '\0';
+	for (append_dest = 0; src[append_dest] && append_dest < n; append_dest++)
+	dest[lvl++] = src[append_dest];
 
 	return (dest);
 }
