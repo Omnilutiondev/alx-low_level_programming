@@ -16,6 +16,7 @@ char *_strcat(char *dest, char *src)
 
 	for (appnd_len = 0; dest[appnd_len] != '\0'; appnd_len++)
 	{
+
 	}
 
 	for (lvl = 0; src[lvl] != '\0'; lvl++)
