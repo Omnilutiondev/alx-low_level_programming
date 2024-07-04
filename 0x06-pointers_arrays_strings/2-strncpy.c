@@ -2,28 +2,24 @@
 #include <stdio.h>
 
 /**
- * _strncpy - This function will concatenate two strings
+ * _strncpy - This function will copy a string
  *
  * @dest: This is the destination string
  * @src: This is the source string to append
+ * @n: The number of bytes being copied
  *
  * Return: The result in string dest
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int appnd_len = 0;
-	int origin = 0;
+	int cpstr;
 
-	while (dest[appnd_len] != '\0')
-	appnd_len++;
+	for (cpstr = 0; cpstr < n && src[cpstr] != '\0'; cpstr++)
+		dest[cpstr] = src[cpstr];
 
-	while (src[origin] != '\0')
-	{
-		dest[appnd_len] = src[origin];
-		appnd_len++;
-		origin++;
-	}
-	dest[appnd_len] = '\0';
+	for ( ; cpstr < n; cpstr++)
+		dest[cpstr] = '\0';
+
 	return (dest);
 }
