@@ -26,7 +26,7 @@ char *_strcat(char *dest, char *src)
 	
 	for (lvl = 0; lvl <= origin; lvl++)
 	{
-		dest[appnd_len + lvl] = src[lvl];
+	dest[appnd_len + lvl] = src[lvl];
 	}
 
 	return (dest);
