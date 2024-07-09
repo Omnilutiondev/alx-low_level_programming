@@ -9,7 +9,7 @@ int main(void)
 {
 	char dgt;
 
-	for (dgt = '0'; dgt <= 'j'; dgt++)
+	for (dgt = '0'; dgt <= 'f'; dgt++)
 	{
 		if ((dgt <= '9') || (dgt >= 'a'))
 			putchar(dgt);
