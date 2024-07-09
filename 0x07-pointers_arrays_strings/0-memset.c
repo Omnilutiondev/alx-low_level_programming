@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _memset() - This function fills the memory area with a constant byte
+ * _memset - This function fills the memory area with a constant byte
  *
  * @s: This is the pointer to the target memory area
  * @b: This is the constant byte to fill the memory area with
