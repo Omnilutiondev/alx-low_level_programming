@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * _memset() - This function fills the fills the first byste of the memory area appointed by s with the constant byte present in b
+ * _memset() - This function fills the memory area with a constant byte
  *
- * @s: This is the pointer to the memory area to be filled
- * @b: This is the constant byte to fill the target memory area
+ * @s: This is the pointer to the target memory area
+ * @b: This is the constant byte to fill the memory area with
  * @n: This is the number of bytes to fill
  *
  * Return: s the pointer to the memory area
