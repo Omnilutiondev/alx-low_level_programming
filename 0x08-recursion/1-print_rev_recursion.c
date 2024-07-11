@@ -4,16 +4,16 @@
 /**
  * _print_rev_recursion - This function prints a string in reverse
  *
- * @s: The string to be printed
+ * @s: This is the string to be printed
  *
  * Return: void
  */
 
 void _print_rev_recursion(char *s)
 {
-	if (*s == '\0')
-		return;
-
+	if (*s != '\0')
+	{
 	_print_rev_recursion(s + 1);
-	write(1, s, 1);
+	_putchar(*s);
+	}
 }
