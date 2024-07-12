@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * sqroot_pusher - The is a precursor function to calculate square root recursively
+ * sqroot_pusher - The is a precursor function to calculate square root
  *
  * @numb: This the number to calculate the square root of
  * @idx: This the current guess for the square root
@@ -12,11 +12,12 @@
 
 int sqroot_pusher(int numb, int idx)
 {
-    if (idx * idx > numb)
-        return (-1);
-    if (idx * idx == numb)
-        return (idx);
-    return (sqroot_pusher(numb, idx + 1));
+	if (idx * idx > numb)
+	return (-1);
+
+	if (idx * idx == numb)
+	return (idx);
+	return (sqroot_pusher(numb, idx + 1));
 }
 
 
@@ -30,7 +31,8 @@ int sqroot_pusher(int numb, int idx)
 
 int _sqrt_recursion(int n)
 {
-    if (n < 0)
-        return (-1);
-    return (sqroot_pusher(n, 0));
+	if (n < 0)
+	return (-1);
+
+	return (sqroot_pusher(n, 0));
 }
