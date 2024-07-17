@@ -12,7 +12,7 @@
 
 int main(int argc, char **argv)
 {
-	int chng, min_coin = 0;
+	int cents, min_coin = 0;
 
 	if (argc == 1 || argc > 2)
 	{
@@ -20,21 +20,20 @@ int main(int argc, char **argv)
 	return (1);
 	}
 
-	chng = atoi(agrv[1]);
+	cents = atoi(agrv[1]);
 
-	while (chng > 0)
+	while (cents > 0)
 	{
-		if (chng >= 25)
-		chng -= 25;
-		if (chng >= 10)
-		chng -= 10;
-		if (chng >= 5)
-		chng -= 5;
-		if (chng >= 2)
-		chng -= 2;
-		if (chng >= 1)
-		chng -= 1;
-
+		if (cents >= 25)
+		cents -= 25;
+		if (cents >= 10)
+		cents -= 10;
+		if (cents >= 5)
+		cents -= 5;
+		if (cents >= 2)
+		cents -= 2;
+		if (cents >= 1)
+		cents -= 1;
 		min_coin += 1;
 	}
 	printf("%d\n", min_coin);
