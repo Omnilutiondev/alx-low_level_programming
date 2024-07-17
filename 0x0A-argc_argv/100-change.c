@@ -7,7 +7,7 @@
  * @argc: The number of command lines
  * @argv: The array that holds the command lines
  *
- * Return: 0 (On Success)
+ * Return: 0 On Success
  */
 
 int main(int argc, char **argv)
@@ -26,16 +26,12 @@ int main(int argc, char **argv)
 	{
 		if (chng >= 25)
 		chng -= 25;
-
 		if (chng >= 10)
 		chng -= 10;
-
 		if (chng >= 5)
 		chng -= 5;
-
 		if (chng >= 2)
 		chng -= 2;
-
 		if (chng >= 1)
 		chng -= 1;
 
