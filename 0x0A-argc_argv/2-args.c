@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int cmdl;
 
-	for (cmdl = 0 < argc; cmdl++)
+	for (cmdl = 0; cmdl < argc; cmdl++)
 	{
 	printf("%s\n", argv[cmdl]);
 	}
