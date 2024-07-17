@@ -25,17 +25,17 @@ int **alloc_grid(int width, int height)
 
 	for (idx1 = 0; idx1 < height; idx1++)
 	{
-		grid[idx1] = malloc(sizeof(int) * width);
-		if (grid[idx1] == NULL)
+		dagrid[idx1] = malloc(sizeof(int) * width);
+		if (dagrid[idx1] == NULL)
 		{
 		for (idx2 = 0; idx2 < idx1; idx2++)
-			free(dagrid[j]);
+			free(dagrid[idx2]);
 			free(dagrid);
 		return (NULL);
 		}
 
 		for (idx2 = 0; idx2 < width; idx2++)
-			grid[idx1][idx2] = 0;
+			dagrid[idx1][idx2] = 0;
 	}
 
 	return (dagrid);
