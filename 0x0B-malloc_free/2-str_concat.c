@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	if (concatate == NULL)
 		return (NULL);
 
-	for (idx1 = 0; idx < lnt1; idx1++)
+	for (idx1 = 0; idx1 < lnt1; idx1++)
 		concatate[idx1] = s1[idx1];
 
 	for (idx2 = 0; idx2 < lnt2; idx2++, idx1++)
