@@ -29,13 +29,13 @@ int **alloc_grid(int width, int height)
 		if (dagrid[idx1] == NULL)
 		{
 		for (idx2 = 0; idx2 < idx1; idx2++)
-			free(dagrid[idx2]);
-			free(dagrid);
+		free(dagrid[idx2]);
+		free(dagrid);
 		return (NULL);
 		}
 
 		for (idx2 = 0; idx2 < width; idx2++)
-			dagrid[idx1][idx2] = 0;
+		dagrid[idx1][idx2] = 0;
 	}
 
 	return (dagrid);
