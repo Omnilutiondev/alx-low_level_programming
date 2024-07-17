@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int cents, coins = 0;
+	int cents, min_coins = 0;
 
 	if (argc != 2)
 	{
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 	while (cents > 0)
 	{
-		coins++;
+		min_coins++;
 		if ((cents - 25) >= 0)
 		{
 		cents -= 25;
@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 		cents--;
 	}
 
-	printf("%d\n", coins);
+	printf("%d\n", min_coins);
 
 	return (0);
 }
