@@ -26,8 +26,8 @@ char *argstostr(int ac, char **av)
 	lnt++
 	}
 
-	str = malloc(sizeof(char) * (lnt + 1));
-	if (str == NULL)
+	tostr = malloc(sizeof(char) * (lnt + 1));
+	if (tostr == NULL)
 	return (NULL);
 
 	idx3 = 0;
@@ -35,13 +35,13 @@ char *argstostr(int ac, char **av)
 	{
 	for (idx2 = 0; av[idx1][idx2]; idx2++)
 	{
-		str[idx3] = av[idx1][idx2];
+		tostr[idx3] = av[idx1][idx2];
 		idx3++;
 	}
-	str[idx3] = '\n';
+	tostr[idx3] = '\n';
 	idx3++;
 	}
-	str[idx3] = '\0';
+	tostr[idx3] = '\0';
 
-	return (str);
+	return (tostr);
 }
