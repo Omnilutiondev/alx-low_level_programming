@@ -12,13 +12,13 @@ void free_grid(int **grid, int height)
 {
 	int idx;
 
-	if (dagrid == NULL || height <= 0)
+	if (grid == NULL || height <= 0)
 	return;
 
 	for (idx = 0; idx < height; idx++)
 	{
-	free(dagrid[idx]);
+	free(grid[idx]);
 	}
 
-	free(dagrid);
+	free(grid);
 }
