@@ -1,1 +1,1 @@
-This for C programming modules
+This is a readme file for macro exercises
