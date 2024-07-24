@@ -26,7 +26,10 @@ dog_t *new_dog(char *name, float age, char *owner);
 
 void free_dog(dog_t *d);
 
-struct dog my_dog = {"Buddy", 3.5, "John"};
+struct dog my_dog = {"Poppy", 3.5, "Bob"};
+
 print_dog(&my_dog);
+
+typedef struct dog dog_t;
 
 #endif
