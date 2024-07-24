@@ -11,6 +11,12 @@
  * its name,age and the name of its owner.
  */
 
+/**
+ * dog_t - This the new name for struct dog
+ */
+
+typedef struct dog dog_t;
+
 struct dog
 {
 	char *name;
@@ -26,10 +32,5 @@ dog_t *new_dog(char *name, float age, char *owner);
 
 void free_dog(dog_t *d);
 
-struct dog my_dog = {"Poppy", 3.5, "Bob"};
-
-print_dog(&my_dog);
-
-typedef struct dog dog_t;
 
 #endif
