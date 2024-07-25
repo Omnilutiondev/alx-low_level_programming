@@ -4,10 +4,10 @@
 /**
  * free_dog - This function frees memory allocated for a dog
  *
- * @d: This the pointer to dog_t structure to free
+ * @d: This the pointer to dog_t structure
  *
- * Description: This is a function that frees the memory allocated for a dog structure,
- * including the memory allocated for its name and owner.
+ * Description: This is a function that frees the memory allocated
+ * for a dog structure, including the memory for its name and owner.
  */
 
 void free_dog(dog_t *d)
