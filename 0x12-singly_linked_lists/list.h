@@ -10,7 +10,7 @@ size_t print_list(const list_t *h);
  * struct list_s - these are singly linked lists
  *
  * @str: The malloc string
- * len: The length of the string
+ * @len: The length of the string
  * @next: The pointer to the next node
  */
 
