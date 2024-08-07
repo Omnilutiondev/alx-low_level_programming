@@ -6,12 +6,19 @@
 #include <stdlib.h>
 
 /**
- * struct listint_s - The self referencial structure
- * used in creating nodes of a singly linked list
+ * struct listint_s - singly linked list
+ * @n: integer
+ * @next: points to the next node
  *
- * @n: The integer with data
- * @next: The self referencial pointer
+ * Description: singly linked list node structure
+ * 
  */
+typedef struct listint_s
+{
+	int n;
+	struct listint_s *next;
+} listint_t;
+
 
 typedef struct listint_s
 {
