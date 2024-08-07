@@ -6,7 +6,7 @@
  *
  * @head: This is the pointer to the list
  *
- * Return: The int
+ * Return: int
  */
 
 int pop_listint(listint_t **head)
