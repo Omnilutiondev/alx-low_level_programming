@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!filename)
 		return (0);
 
-	trd = p[em(filename, O_RDONLY);
+	trd = open(filename, O_RDONLY);
 
 	if (trd == -1)
 		return (0);
@@ -29,7 +29,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	ner =  read(trd, buff, letters);
-	she = write(STDOUT_FILENO, buff, trd);
+	she = write(STDOUT_FILENO, buff, ner);
 
 	close(trd);
 	free(buff);
