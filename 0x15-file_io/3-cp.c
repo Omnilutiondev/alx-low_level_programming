@@ -52,12 +52,9 @@ int main(int argc, char *argv[])
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	error_file(file_from, file_to, argv);
 
-	nbchar = 1024;
-	while (nbchar == 1024)
+
+	while ((nbchar = read(file_from, buff, sizeof(buff))) > 0)
 	{
-		nbchar = read(file_from, buff, sizeof(buff));
-		if (nbchar == -1)
-		error_file(-1, 0, argv);
 		nfc = write(file_to, buff, nbchar);
 		if (nfc == -1)
 		error_file(0, -1, argv);
