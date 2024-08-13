@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
 	nbchar = 1024;
 	while (nbchar == 1024)
 	{
-		nbchar = read(file_from, buff, 1024);
+		nbchar = read(file_from, buff, sizeof(buff));
 		if (nbchar == -1)
 		error_file(-1, 0, argv);
 		nfc = write(file_to, buff, nbchar);
@@ -70,6 +70,7 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 	fail_close = close(file_to);
+	if (fail_close == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fc %d\n", file_to);
 		exit(100);
