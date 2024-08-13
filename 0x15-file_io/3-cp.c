@@ -54,14 +54,14 @@ int main(int argc, char *argv[])
 
 	nbchar = 1024;
 	while (nbchar == 1024)
-		{
-			nbchar = read(file_from, buff, 1024);
-			if (nbchar == -1)
-				error_file(-1, 0, argv);
-			nfc = write(file_to, buff, 1024);
-			if (nfc == -1)
-			error_file(0, -1, argv);
-		}
+	{
+		nbchar = read(file_from, buff, 1024);
+		if (nbchar == -1)
+		error_file(-1, 0, argv);
+		nfc = write(file_to, buff, nbchar);
+		if (nfc == -1)
+		error_file(0, -1, argv);
+	}
 
 	fail_close = close(file_from);
 	if (fail_close == -1)
