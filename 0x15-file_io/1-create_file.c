@@ -27,7 +27,8 @@ int create_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 		text_content = "";
 
-	for (content = 0; text_content[content]; content++);
+	for (content = 0; text_content[content]; content++)
+		;
 
 	perm = write(fc, text_content, content);
 
