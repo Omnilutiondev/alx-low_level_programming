@@ -32,11 +32,11 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	else
 	{
 		if (temp_val->next == NULL)
-			node = temp_val->next;
+			da_node = temp_val->next;
 		else
-			node = temp_val->next->next;
+			da_node = temp_val->next->next;
 		free(temp_val->next);
-		temp->next = node;
+		temp_val->next = da_node;
 	}
 	return (1);
 }
