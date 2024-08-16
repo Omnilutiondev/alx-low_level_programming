@@ -20,7 +20,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	if (head == NULL || *head == NULL)
 		return (-1);
 	for (del = 0; del < index - 1 && temp_val != NULL && index != 0; del++)
-		temp_val = head->next;
+		temp_val = temp_val->next;
 	if (temp_val == NULL)
 		return (-1);
 	if (index == 0)
