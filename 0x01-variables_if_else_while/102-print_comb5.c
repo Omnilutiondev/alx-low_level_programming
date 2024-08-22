@@ -14,11 +14,12 @@ int main(void)
 
 	for (pnp = 0; pnp <= 98; pnp++)
 	{
+
 		for (qut = pnp + 1; qut <= 99; qut++)
 		{
 			putchar((pnp / 10) + '0');
 			putchar((pnp % 10) + '0');
-			putchar((' ');
+			putchar(' ');
 			putchar((qut / 10) + '0');
 			putchar((qut % 10) + '0');
 			if (pnp == 98 && qut == 99)
