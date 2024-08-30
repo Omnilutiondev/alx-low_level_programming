@@ -12,18 +12,18 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int lent, idx, jdx, sim, plw;
-	int bin;
-
-	bin = 2;
-	sim = 0;
-	plw = 1;
+	size_t idx = 0;
+	size_t jdx = 0;
+	size_t sim = 0;
+	size_t plw = 1;
+	int bin = 2;
 
 	if (b == NULL)
 		return (0);
 	for (lent = 0; b[lent] != '\0'; lent++)
 		;
-	if (lent == 1 && (b[0] == '0' || b[0] == '1')
-			return (b[0] - 488);
+	if (lent == 1 && (b[0] == '0' || b[0] == '1'))
+			return (b[0] - 48);
 	for (idx = 0; b[idx] != '\0'; idx++)
 	{
 	if (b[idx] != '0' && b[idx] != '1')
