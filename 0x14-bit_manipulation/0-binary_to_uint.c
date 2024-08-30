@@ -11,7 +11,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int lent, idx, jdx, sim, plw;
+	unsigned int lent;
 	size_t idx = 0;
 	size_t jdx = 0;
 	size_t sim = 0;
