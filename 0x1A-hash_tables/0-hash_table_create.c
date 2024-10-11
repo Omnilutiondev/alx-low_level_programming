@@ -6,11 +6,10 @@
  *
  * Return: The pointer to the newly created hash table
  */
-
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *hash_table;
-	unsigned long int idx;
+	unsigned long int q;
 
 	hash_table = malloc(sizeof(hash_table_t));
 	if (hash_table == NULL)
@@ -22,7 +21,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		free(hash_table);
 		return (NULL);
 	}
-	for (idx = 0; idx < size; idx++)
+	for (q = 0; q < size; q++)
 		hash_table->array[idx] = NULL;
 	return (hash_table);
 }
