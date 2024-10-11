@@ -4,6 +4,7 @@
  * hash_table_set - This fucntion sets a key to a value in the hash table
  * @ht: The hash table to add the element to
  * @key: The key for the data
+ * @value: The data to store
  *
  * Return: 1 on success, O if not
  */
@@ -13,7 +14,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *hash_node, *temp;
 	char *neww_value;
 
-	if (ht == NULL || ht->array == NULL || ht->size == 0 || key == NULL || strlen(key) == 0 || value == NULL)
+	if (ht == NULL || ht->array == NULL || ht->size == 0 ||
+	key == NULL || strlen(key) == 0 || value == NULL)
 		return (0);
 	idx = key_idx((const unsigned char *)key, ht->size);
 	temp = ht->array[idx];
