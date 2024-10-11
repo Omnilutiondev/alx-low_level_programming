@@ -12,24 +12,24 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int idx;
 	hash_node_t *hash_node, *temp;
-	char *neww_value;
+	char *new_value;
 
 	if (ht == NULL || ht->array == NULL || ht->size == 0 ||
 	    key == NULL || strlen(key) == 0 || value == NULL)
 		return (0);
 
-	idx = key_idx((const unsigned char *)key, ht->size);
+	idx = key_index((const unsigned char *)key, ht->size);
 	temp = ht->array[idx];
 
 	while (temp != NULL)
 	{
 		if (strcmp(temp->key, key) == 0)
 		{
-			neww_value = strdup(value);
-			if (neww_value == NULL)
+			new_value = strdup(value);
+			if (new_value == NULL)
 				return (0);
 			free(temp->value);
-			temp->value = neww_value;
+			temp->value = new_value;
 			return (1);
 		}
 		temp = temp->next;
