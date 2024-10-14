@@ -12,13 +12,7 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *temp;
 	int pairs_printed = 0;
 
-	if (ht == NULL)
-	{
-		printf("{}\n");
-		return;
-	}
-
-	if (ht->array == NULL)
+	if (ht == NULL || ht->size == 0 || ht->array == NULL)
 	{
 		printf("{}\n");
 		return;
