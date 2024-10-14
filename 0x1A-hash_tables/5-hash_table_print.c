@@ -8,29 +8,28 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-    unsigned long int idx;
-    hash_node_t *temp;
-    int pairs_printed = 0;
+	unsigned long int idx;
+	hash_node_t *temp;
+	int pairs_printed = 0;
 
-    if (ht == NULL || ht->array == NULL)
-    {
-        printf("{}\n");
-        return;
-    }
+	if (ht == NULL || ht->array == NULL)
+	{
+		printf("{}\n");
+		return;
+	}
 
-    printf("{");
-    for (idx = 0; idx < ht->size; idx++)
-    {
-        temp = ht->array[idx];
-        while (temp != NULL)
-        {
-            if (pairs_printed > 0)
-                printf(", ");
-            printf("'%s': '%s'", temp->key, temp->value);
-            pairs_printed++;
-            temp = temp->next;
-        }
-    }
-    printf("}\n");
+	printf("{");
+	for (idx = 0; idx < ht->size; idx++)
+	{
+		temp = ht->array[idx];
+		while (temp != NULL)
+		{
+			if (pairs_printed > 0)
+				printf(", ");
+			printf("'%s': '%s'", temp->key, temp->value);
+			pairs_printed++;
+			temp = temp->next;
+		}
+	}
+	printf("}\n");
 }
-
