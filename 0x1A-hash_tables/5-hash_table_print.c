@@ -10,7 +10,7 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int idx;
 	hash_node_t *temp;
-	char flaag = 0; /* 0 while there is no data to print */
+	char pairs_printed = 0;
 
 	if (ht == NULL || ht->size == 0 || ht->array == NULL)
 	{
@@ -24,12 +24,13 @@ void hash_table_print(const hash_table_t *ht)
 		temp = ht->array[idx];
 		while (temp != NULL)
 		{
-			if (flaag == 1)
+			if (pairs_printed > 0)
 				printf(", ");
 			printf("'%s': '%s'", temp->key, temp->value);
-			flaag == 1;
+			pairs_printed++;
 			temp = temp->next;
 		}
 	}
 	printf("}\n");
 }
+
