@@ -3,7 +3,7 @@
 void _newliner(void) __attribute__ ((constructor));
 
 /**
- * _constructor - This function executes the main()
+ * _newliner - This function executes the main()
  *
  * Return: Always void
  */
