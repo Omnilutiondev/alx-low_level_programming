@@ -21,10 +21,10 @@ list_t *add_node(list_t **head, const char *str)
 			free(new_heads);
 			return (NULL);
 		}
-		new_heads->len = _strlen(new_heads->str);
+		new_heads->len = strlen(new_heads->str);
 	}
 
 	new_heads->next = *head;
 	*head = new_heads;
-	return (new_head);
+	return (new_heads);
 }
