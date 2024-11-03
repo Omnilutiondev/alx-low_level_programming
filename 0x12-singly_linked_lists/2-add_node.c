@@ -9,34 +9,22 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new_ins;
+	list_t *new_heads = malloc(sizeof(list_t));
 
-	if (!head)
+	if (!head || !new_heads)
 		return (NULL);
-
-	new_ins = malloc(sizeof(list_t));
-	if (!new_ins)
-		return (NULL);
-
-	/* Initializes the new node */
-	new_ins->str = NULL;
-	new_ins->len = 0;
-	new_ins->next = NULL;
-
 	if (str)
 	{
-		new_ins->str = strdup(str);
-		if (!new_ins->str)
+		new_heads->str = strdup(str);
+		if (!new_heads->str)
 		{
-			free(new_ins);
+			free(new_heads);
 			return (NULL);
 		}
-		new_ins->len = _strlen(new_ins->str);
+		new_heads->len = _strlen(new_heads->str);
 	}
 
-	/* Linkthe new node to the list */
-	new_ins->next = *head;
-	*head = new_ins;
-
-	return (new_ins);
+	new_heads->next = *head;
+	*head = new_heads;
+	return (new_head);
 }
