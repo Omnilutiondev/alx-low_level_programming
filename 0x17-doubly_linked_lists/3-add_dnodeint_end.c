@@ -3,6 +3,7 @@
 /**
  * add_dnodeint_end - This function adds a node at the end
  * @head: The address of the head node
+ * @n: the int field of the new node
  *
  * Return: The address of the new node or NULL
  */
