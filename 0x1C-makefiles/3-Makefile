@@ -1,5 +1,4 @@
-#create a more advanced executable using rules and variables
-
+#create a more advanced makefile
 
 CC = gcc
 SRC = main.c school.c
@@ -14,7 +13,7 @@ clean:
 	${RM} *~ ${NAME}
 
 oclean:
-	${RM} ${NAME}
+	${RM} ${OBJ}
 
 fclean: clean oclean
 
