@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ create a function def island_perimeter(grid) """
 
+
 def island_perimeter(grid):
     """return the perimeter in the grid for the island in question"""
     height = len(grid)
@@ -17,4 +18,3 @@ def island_perimeter(grid):
                 if (idx > 0 and grid[idx - 1][jdx] == 1):
                     edges += 1
     return ((size * 4) - (edges * 2))
-
