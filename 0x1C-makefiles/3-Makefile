@@ -13,6 +13,9 @@ all: ${OBJ}
 clean:
 	${RM} "~ ${NAME}
 
+oclean:
+	${RM} ${NAME}
+
 fclean: clean oclean
 
 re: fclean all
